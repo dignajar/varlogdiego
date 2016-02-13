@@ -4,12 +4,14 @@ content:
 
 Here are the steps to contribute your code to existing Github project.
 
-- Go to the repository via web. For example, ```https://github.com/{friend_username}/{friend_project_name}```
+- Go to the repository via web.
+```https://github.com/{friend_username}/{friend_project_name}```
 - Click the "Fork" button at the top. This create a copy of the repository on your Github account.
-- Now clone your new copy repository on your local PC, open a shell, and use the command `git clone`.
+- Clone the repository from your Github account on your local PC.
+- Open a Shell / Terminal.
 
 ```
-$ git clone git@github.com:{friend_username}/{friend_project_name}.git
+$ git clone git@github.com:{my_username}/{friend_project_name}.git
 
 # Output example
 Cloning into '{friend_project_name}'...
@@ -26,13 +28,14 @@ Checking connectivity... done.
 $ cd {friend_project_name}
 ```
 
-- Connect your local repo with the original repo.
+- Connect your local repository with the original repository.
 
 ```
 $ git remote add {friend_username} git@github.com:{friend_username}/{friend_project_name}.git
 ```
 
-- Now you can make changes on your local repo, then make a push.
+- Now you can make changes on your local repository.
+- After the changes, make a push to sync your local repo and Github repo.
 
 ```
 $ git add -A
@@ -40,16 +43,17 @@ $ git commit -m "New changes"
 $ git push
 ```
 
-- Now you have your local repo and Github repo in sync.
-- Go to your repository on Github web.
-- Click on the button "New pull request".
-- Click on the button "Create a pull request".
+- Go to your repository on Github.
+```https://github.com/{my_username}/{friend_project_name}```
+- Click on the button **"New pull request"**.
+- Click on the button **"Create a pull request"**.
 - Complete the title and description about the changes you made.
-- Click on the button "Create pull request".
+- Click on the button **"Create pull request"**.
 - Now wait your friend accept this changes.
 
 ## Notes
-- Change the {friend_username} for the username of the repo to contribute, remember remove the { }.
-- Change the {friend_project_name} for the project name of the repo to contribute, remember remove the { }.
+- Change {my_username} for your username, remember remove the { }.
+- Change {friend_username} for the username of the repository to contribute, remember remove the { }.
+- Change {friend_project_name} for the project name of the repository to contribute, remember remove the { }.
 
 This post is based on: http://kbroman.org/github_tutorial/pages/fork.html
