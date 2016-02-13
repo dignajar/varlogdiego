@@ -4,15 +4,15 @@ content:
 
 Here are the steps to contribute your code to existing Github project.
 
-- Go to the repository via web. For example, https://github.com/`{username}`/`{project_name}`
-- Click the "Fork" button at the top. This create a copy of the repository on your account.
-- Now clone your new copy repository on your PC, open a terminal, and used the command `git clone`.
+- Go to the repository via web. For example, https://github.com/`{friend_username}`/`{friend_project_name}`
+- Click the "Fork" button at the top. This create a copy of the repository on your Github account.
+- Now clone your new copy repository on your local PC, open a shell, and use the command `git clone`.
 
 ```
-$ git clone git@github.com:{username}/{project_name}.git
+$ git clone git@github.com:{friend_username}/{friend_project_name}.git
 
 # Output example
-Cloning into '{project_name}'...
+Cloning into '{friend_project_name}'...
 remote: Counting objects: 211, done.
 remote: Total 211 (delta 0), reused 0 (delta 0), pack-reused 211
 Receiving objects: 100% (211/211), 56.62 KiB | 0 bytes/s, done.
@@ -23,13 +23,13 @@ Checking connectivity... done.
 - Go into the new directory created
 
 ```
-$ cd {project_name}
+$ cd {friend_project_name}
 ```
 
 - Connect your local repo with the original repo.
 
 ```
-$ git remote add {username} git@github.com:{username}/{project_name}.git
+$ git remote add {friend_username} git@github.com:{friend_username}/{friend_project_name}.git
 ```
 
 - Now you can make changes on your local repo, then make a push.
@@ -40,12 +40,12 @@ $ git commit -m "New changes"
 $ git push
 ```
 
-- Now you have your local repo and github repo in sync.
+- Now you have your local repo and Github repo in sync.
 - Go to your repository on Github web.
 - Click on the button "New pull request".
 - Click on the button "Create a pull request".
-- Complete the title and the content with a description about the changes.
-- Click again on the button "Create pull request".
+- Complete the title and description about the changes you made.
+- Click on the button "Create pull request".
 - Now wait your friend accept this changes.
 
 This post is based on this link: http://kbroman.org/github_tutorial/pages/fork.html
