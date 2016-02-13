@@ -4,7 +4,7 @@ content:
 
 Here are the steps to contribute your code to existing Github project.
 
-- Go to the repository via web. For example, https://github.com/`{friend_username}`/`{friend_project_name}`
+- Go to the repository via web. For example, ```https://github.com/{friend_username}/{friend_project_name}```
 - Click the "Fork" button at the top. This create a copy of the repository on your Github account.
 - Now clone your new copy repository on your local PC, open a shell, and use the command `git clone`.
 
