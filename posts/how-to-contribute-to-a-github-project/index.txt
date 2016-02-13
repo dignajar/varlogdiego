@@ -20,7 +20,7 @@ Resolving deltas: 100% (62/62), done.
 Checking connectivity... done.
 ```
 
-- Go into the new directory created
+- Go into the new directory created.
 
 ```
 $ cd {friend_project_name}
@@ -48,4 +48,8 @@ $ git push
 - Click on the button "Create pull request".
 - Now wait your friend accept this changes.
 
-This post is based on this link: http://kbroman.org/github_tutorial/pages/fork.html
+## Notes
+- Change the {friend_username} for the username of the repo to contribute, remember remove the { }.
+- Change the {friend_project_name} for the project name of the repo to contribute, remember remove the { }.
+
+This post is based on: http://kbroman.org/github_tutorial/pages/fork.html
