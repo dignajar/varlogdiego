@@ -26,10 +26,15 @@ Replace *{url}* for the URL of your Juniper web portal and the *{realm}* for the
 
 ## Usage
 - Connect to the VPN
+
 ```$ dvpn```
+
 - Disconnect
+
 ```$ dvpn --disconnect```
+
 - Regenerate certificate
+
 ```$ dvpn --certificate```
 
 ## Links
