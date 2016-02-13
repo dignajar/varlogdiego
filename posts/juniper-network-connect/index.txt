@@ -2,10 +2,7 @@ title: Juniper Network Connect for GNU/Linux
 tags: Linux, Juniper, VPN
 content:
 
-I made a little script to connect to the Juniper VPN, this script used the Java client (32bits) from Juniper Network Connect and is based on the next links:
-
-- http://www.scc.kit.edu/scc/net/juniper-vpn/linux/
-- http://mad-scientist.us/juniper.html
+I made a little script to connect to the Juniper VPN, this script used the Java client (32bits) from Juniper Network Connect.
 
 ## Notes
 - If you are running a 64bits plataform you need to install 32bits runtime libraries.
@@ -13,6 +10,8 @@ I made a little script to connect to the Juniper VPN, this script used the Java 
 
 ## Download
 Github proyect: https://github.com/dignajar/dvpn
+
+<!-- pagebreak -->
 
 ## Installation on Ubuntu
 ```
@@ -26,12 +25,13 @@ $ ./install_dvpn.sh {url} {realm}
 Replace *{url}* for the URL of your Juniper web portal and the *{realm}* for the user group associated.
 
 ## Usage
-Execute the command dvpn.
+Connect to the VPN
 ```
 $ dvpn
-
-# Output
-dVPN v1.2
-Username:
-Password:
 ```
+
+## Links
+This script is based on the next links:
+
+- http://www.scc.kit.edu/scc/net/juniper-vpn/linux/
+- http://mad-scientist.us/juniper.html
