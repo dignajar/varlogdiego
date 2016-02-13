@@ -6,7 +6,7 @@ Here are the steps to contribute your code to existing Github project.
 
 - Go to the repository via web.
 ```https://github.com/{friend_username}/{friend_project_name}```
-- Click the "Fork" button at the top. This create a copy of the repository on your Github account.
+- Click the **"Fork"** button at the top. This create a copy of the repository on your Github account.
 - Clone the repository from your Github account on your local PC.
 - Open a Shell / Terminal.
 
@@ -52,8 +52,8 @@ $ git push
 - Now wait your friend accept this changes.
 
 ## Notes
-- Change {my_username} for your username, remember remove the { }.
-- Change {friend_username} for the username of the repository to contribute, remember remove the { }.
-- Change {friend_project_name} for the project name of the repository to contribute, remember remove the { }.
+- Change *{my_username}* for your username, remember remove the { }.
+- Change *{friend_username}* for the username of the repository to contribute, remember remove the { }.
+- Change *{friend_project_name}* for the project name of the repository to contribute, remember remove the { }.
 
 This post is based on: http://kbroman.org/github_tutorial/pages/fork.html
