@@ -9,11 +9,13 @@ List all VLANs names and ID
 $ esxcli network vswitch standard portgroup list
 ```
 
-Create VLAN, change the variables { }
+Create a VLAN
 ```
 $ esxcli network vswitch standard portgroup add -p "{VLAN-NAME}" -v {Virtual Switch}
 $ esxcli network vswitch standard portgroup set -p "{VLAN-NAME}" --vlan-id {VLAN-ID}
+```
 
+```
 # Example
 $ esxcli network vswitch standard portgroup add -p "VLAN10" -v vSwitch0
 $ esxcli network vswitch standard portgroup set -p "VLAN10" --vlan-id 10
@@ -30,30 +32,32 @@ List adapters
 ```
 $ esxcli iscsi adapter list
 
-Adapter  Driver     State   UID            Description                             
+Adapter  Driver     State   UID            Description
 -------  ---------  ------  -------------  ----------------------------------------
-vmhba33  iscsi_vmk  online  iscsi.vmhba33  iSCSI Software Adapter        
+vmhba33  iscsi_vmk  online  iscsi.vmhba33  iSCSI Software Adapter
 ```
 
 Adapter information
 ```
 $ esxcli iscsi adapter get -A {ADAPTER-NAME}
+```
 
+```
 # Example
 $ esxcli iscsi adapter get -A vmhba33
 vmhba33
    Name: iqn.1998-01.com.vmware:esxi-a3333
-   Alias: 
+   Alias:
    Vendor: VMware
    Model: iSCSI Software Adapter
    Description: iSCSI Software Adapter
-   Serial Number: 
-   Hardware Version: 
-   Asic Version: 
-   Firmware Version: 
-   Option Rom Version: 
+   Serial Number:
+   Hardware Version:
+   Asic Version:
+   Firmware Version:
+   Option Rom Version:
    Driver Name: iscsi_vmk
-   Driver Version: 
+   Driver Version:
    TCP Protocol Supported: false
    Bidirectional Transfers Supported: false
    Maximum Cdb Length: 64
@@ -68,7 +72,9 @@ vmhba33
 Set adapter name (IQN)
 ```
 $ esxcli iscsi adapter set --adapter={ADAPTER-NAME} --name={IQN-NAME}
+```
 
+```
 # Example
 $ esxcli iscsi adapter set --adapter=vmhba33 --name=iqn.1998-01.com.vmware:esxi-a3333
 ```
@@ -81,7 +87,9 @@ $ esxcli iscsi adapter discovery sendtarget list
 Add discovery dynamic IP
 ```
 $ esxcli iscsi adapter discovery sendtarget add --address={IP:PORT} --adapter={ADAPTER-ISCSI}
+```
 
+```
 # Example
 $ esxcli iscsi adapter discovery sendtarget add --address=10.20.20.1:3260 --adapter=vmhba33
 ```
@@ -89,7 +97,9 @@ $ esxcli iscsi adapter discovery sendtarget add --address=10.20.20.1:3260 --adap
 Rescan
 ```
 $ esxcli iscsi adapter discovery rediscover -A {ADAPTER-NAME}
+```
 
+```
 # Example
 $ esxcli iscsi adapter discovery rediscover -A vmhba33
 ```
