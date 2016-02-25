@@ -103,3 +103,9 @@ $ esxcli iscsi adapter discovery rediscover -A {ADAPTER-NAME}
 # Example
 $ esxcli iscsi adapter discovery rediscover -A vmhba33
 ```
+
+## Suppress Shell Warning
+```
+ESXi->Configuration->Advanced Settings->UserVars->SuppressShellWarning, 0 to 1.
+```
+
