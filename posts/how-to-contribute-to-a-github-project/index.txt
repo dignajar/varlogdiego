@@ -1,4 +1,5 @@
 title: How to contribute to a Github project
+description: Simple steps to collaborate with the open source proyects
 tags: Github
 content:
 
@@ -21,6 +22,8 @@ Receiving objects: 100% (211/211), 56.62 KiB | 0 bytes/s, done.
 Resolving deltas: 100% (62/62), done.
 Checking connectivity... done.
 ```
+
+<!-- pagebreak -->
 
 - Go into the new directory created.
 

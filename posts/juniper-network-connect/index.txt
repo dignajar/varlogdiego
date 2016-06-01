@@ -1,4 +1,5 @@
 title: Juniper Network Connect for GNU/Linux
+description: Client for GNU/Linux
 tags: Linux, Juniper, VPN
 content:
 
