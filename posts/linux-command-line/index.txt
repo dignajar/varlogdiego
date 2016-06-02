@@ -1,0 +1,7 @@
+title: linux command line
+content:
+
+## Grep
+
+grep -i "unsubscribe" * -l | while read file ; do grep -i "subject" "$file" --color ; done
+
