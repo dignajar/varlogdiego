@@ -1,5 +1,7 @@
 title: GNU/Linux Bind as a slave DNS
 tags: Linux, Bind, DNS
+position: 1
+date: 2016-03-10 18:20:00
 content:
 
 DNS Master: 10.1.1.1

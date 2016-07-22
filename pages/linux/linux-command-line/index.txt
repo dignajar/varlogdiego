@@ -1,4 +1,6 @@
-title: linux command line
+title: GNU/Linux command line examples
+position: 1
+date: 2016-03-10 18:20:00
 content:
 
 ## Grep

@@ -1,6 +1,8 @@
 title: How to contribute to a Github project
 description: Simple steps to collaborate with the open source proyects
-tags: Github
+tags: Github, git, contribute
+position: 1
+date: 2016-03-10 18:20:00
 content:
 
 Here are the steps to contribute your code to existing Github project.
