@@ -1,0 +1,9 @@
+---
+ - name: Simple configuration
+   hosts: '{{ hosts }}'
+   become: yes
+
+   roles:
+     - dns
+     - ntp
+     - snmp

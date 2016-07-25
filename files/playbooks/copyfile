@@ -1,0 +1,8 @@
+---
+- hosts: '{{ hosts }}'
+  become: yes
+  gather_facts: no
+
+  tasks:
+    - name: Copy File
+      template: src=file.txt dest=/tmp/ mode=0644

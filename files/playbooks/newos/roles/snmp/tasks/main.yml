@@ -1,0 +1,17 @@
+---
+
+- name: Ubuntu Install SNMP
+  apt: name=snmpd state=present
+  when: ansible_os_family == "Debian"
+
+- name: Centos Install SNMP
+  yum: name=net-snmp state=present
+  when: ansible_os_family == "RedHat"
+
+- name: SNMP configuration file
+  template: src=snmpd.conf dest=/etc/snmp/snmpd.conf
+  notify:
+    - restart snmp
+
+- name: SNMP services started
+  service: name=snmpd state=started enabled=yes

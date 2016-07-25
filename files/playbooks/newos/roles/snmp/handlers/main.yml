@@ -1,0 +1,4 @@
+---
+
+- name: restart snmp
+  command: service snmpd restart

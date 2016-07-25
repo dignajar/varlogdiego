@@ -1,0 +1,30 @@
+---
+
+- name: Ubuntu Install NTP
+  apt: name=ntp state=present
+  when: ansible_os_family == "Debian"
+
+- name: Ubuntu NTP services started
+  service: name=ntp state=started enabled=yes
+  when: ansible_os_family == "Debian"
+
+- name: Ubuntu NTP configuration file
+  template: src=ntp.conf dest=/etc/ntp.conf
+  notify:
+    - restart ntp ubuntu
+  when: ansible_os_family == "Debian"
+
+- name: Centos Install NTP
+  yum: name=ntp state=present
+  when: ansible_os_family == "RedHat"
+
+- name: Centos NTP services started
+  service: name=ntpd state=started enabled=yes
+  when: ansible_os_family == "RedHat"
+
+- name: Centos NTP configuration file
+  template: src=ntp.conf dest=/etc/ntp.conf
+  notify:
+    - restart ntp centos
+  when: ansible_os_family == "RedHat"
+
