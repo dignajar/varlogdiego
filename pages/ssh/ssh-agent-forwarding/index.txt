@@ -1,0 +1,8 @@
+Title: SSH agent forwarding
+Contente:
+
+```
+Host example.com
+    ForwardAgent yes
+```
+
