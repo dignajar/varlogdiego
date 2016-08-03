@@ -1,5 +1,4 @@
 title: Networking stuff
-status: draft
 content:
 
 ## Enable or disable network interface
@@ -24,6 +23,6 @@ $ ip route add 10.1.1.0/24 via 10.1.1.1 dev eth0
 
 ```
 # Default gw
-# ip route add default via {GATEWAY-IP} 
+# ip route add default via {GATEWAY-IP}
 $ ip route add default via 10.1.1.1
 ```

@@ -2,6 +2,13 @@ title: VMware ESXi command line
 tags: VMware, ESXi
 content:
 
+## Virtual machines
+
+Show all virtual machines on the ESXi
+```
+$ vim-cmd vmsvc/getallvms
+```
+
 ## Networking
 
 List all VLANs names and ID
@@ -110,4 +117,3 @@ $ esxcli iscsi adapter discovery rediscover -A vmhba33
 ```
 ESXi->Configuration->Advanced Settings->UserVars->SuppressShellWarning, 0 to 1.
 ```
-
