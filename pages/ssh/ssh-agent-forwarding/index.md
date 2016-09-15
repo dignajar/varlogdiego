@@ -1,5 +1,6 @@
 Title: SSH agent forwarding
-Contente:
+
+Content:
 
 Set on the config file of your SSH client `~/.ssh/config`
 ```

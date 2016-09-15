@@ -1,0 +1,46 @@
+title: Cloud Foundry - Users
+content:
+
+## Create user
+cf create-user {USERNAME} {PASSWORD}
+
+
+## Set org role
+cf set-org-role {USERNAME} {ORG} {ROLE}
+
+ROLES:
+   'OrgManager' - Invite and manage users, select and change plans, and set spending limits
+   'BillingManager' - Create and manage the billing account and payment info
+   'OrgAuditor' - Read-only access to org info and reports
+
+
+## Set space role
+cf set-space-role {USERNAME} {ORG} {SPACE} {ROLE}
+
+ROLES:
+   'SpaceManager' - Invite and manage users, and enable features for a given space
+   'SpaceDeveloper' - Create and manage apps and services, and see logs and reports
+   'SpaceAuditor' - View logs, reports, and settings on this space
+
+
+
+----------------------------------
+
+# Start PCFDEV
+cf dev start
+
+# Login
+cf login -a https://api.local.pcfdev.io --skip-ssl-validation
+
+Admin user => Email: admin / Password: admin
+Regular user => Email: user / Password: pass
+
+# Show orgs
+cf orgs
+
+# List Marketplace Services
+cf marketplace
+
+# List Service Instances
+cf services
+
