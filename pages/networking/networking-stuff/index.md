@@ -1,5 +1,8 @@
-title: Networking stuff
-content:
+Title: Networking stuff
+
+Description: Networking commands for GNU/Linux
+
+Content:
 
 ## Enable or disable network interface
 

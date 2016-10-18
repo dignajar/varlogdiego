@@ -1,4 +1,7 @@
 Title: Bonding configuration
+
+Description: About bonding and useful commands
+
 Content:
 
 ## Descriptions of bonding modes

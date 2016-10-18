@@ -1,5 +1,5 @@
 Title: How to make a release for BOSH
-
+Status: Draft
 Content:
 
 ## Create the release directory

@@ -1,6 +1,10 @@
-title: VMware ESXi command line
-tags: VMware, ESXi
-content:
+Title: VMware ESXi command line
+
+Tags: VMware, ESXi
+
+Description: Networking, ISCSI, Adapters, Tools
+
+Content:
 
 ## Virtual machines
 

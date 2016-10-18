@@ -1,3 +1,0 @@
-Title: About
-Content:
-Nothing here for the moment...
