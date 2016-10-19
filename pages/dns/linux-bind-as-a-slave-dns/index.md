@@ -1,14 +1,18 @@
-title: GNU/Linux Bind as a slave DNS
-tags: Linux, Bind, DNS
-position: 1
-date: 2016-03-10 18:20:00
-content:
+Title: GNU/Linux Bind as a slave DNS
 
-DNS Master: 10.1.1.1
-DNS GNU/Linux Bind: 10.1.1.2
-Domain: mydomain.com
+Tags: Linux, Bind, DNS
 
-File configuration /etc/named.conf
+Content:
+
+Bind as slave DNS server.
+
+- DNS Master: 10.1.1.1
+- DNS GNU/Linux Bind: 10.1.1.2
+- Domain: mydomain.com
+
+## Config file
+
+File configuration `/etc/named.conf`
 
 ```
 options {
@@ -17,7 +21,7 @@ options {
 	dump-file 	"/var/named/data/cache_dump.db";
 	statistics-file "/var/named/data/named_stats.txt";
 	memstatistics-file "/var/named/data/named_mem_stats.txt";
-	
+
 	// Allow internal network only
 	allow-query     { any; };
 
