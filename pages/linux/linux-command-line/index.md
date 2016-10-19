@@ -29,3 +29,11 @@ Change all files permissions to rw-r-r
 ```
 find . -type f -exec chmod 644 {} \;
 ```
+
+## Fork bomb
+
+```
+:(){ :|:& };:
+```
+
+Nice explication: http://askubuntu.com/a/159496
