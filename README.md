@@ -1,4 +1,4 @@
-# /var/log/diego
+# /var/log/diego.com
 
 ## Diego's logs
 
