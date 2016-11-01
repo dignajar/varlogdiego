@@ -1,4 +1,4 @@
-# /var/log/diego
+# /var/log/diego.com
 
 ## Diego's logs
 
@@ -11,7 +11,7 @@ This files are reflected on my website https://varlogdiego.com
 - Docker
 - Github
 - VMware
-- AWS
+- Amazon AWS
 - DNS
 - HP Enclosures / HP Blade
 - SSH
