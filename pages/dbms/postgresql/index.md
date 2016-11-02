@@ -28,3 +28,9 @@ Connect to database and execute.
 CREATE EXTENSION "uuid-ossp";
 ```
 
+### ERROR: type “citext” does not exist
+
+Connect to database and execute.
+```
+CREATE EXTENSION "citext";
+```
