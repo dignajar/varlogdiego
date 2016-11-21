@@ -1,14 +1,41 @@
 title: Docker quick guide
 content:
 
-List containers
+## Hello world
+```
+$ docker run hello-world
+```
+
+## Stop container
+```
+$ docker stop desperate_archimedes
+```
+
+## Start container
+```
+$ docker start desperate_archimedes
+```
+
+## Removing container
+```
+$ docker stop desperate_archimedes
+
+$ docker rm desperate_archimedes
+```
+
+## List containers
 ```
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                     NAMES
 41d307cda913        training/webapp     "python app.py"     12 minutes ago      Up 12 minutes       0.0.0.0:32768->5000/tcp   desperate_archimedes
 ```
 
-Logs / stdout
+## List images
+```
+$ docker images
+```
+
+## Logs / stdout
 ```
 $ docker logs desperate_archimedes
 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
@@ -25,31 +52,14 @@ Run interactive command.
 $ docker run -t -i ubuntu /bin/bash
 ```
 
-Container’s processes
+## Container’s processes
 ```
 $ docker top desperate_archimedes
 PID                 USER                COMMAND
 854                 root                python app.py
 ```
 
-Stop container
-```
-$ docker stop desperate_archimedes
-```
-
-Start container
-```
-$ docker start desperate_archimedes
-```
-
-Removing container
-```
-$ docker stop desperate_archimedes
-
-$ docker rm desperate_archimedes
-```
-
-Docker name
+## Docker name
 ```
 $ docker run -d -P --name web training/webapp python app.py
 ```
