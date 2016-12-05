@@ -202,7 +202,7 @@ $ curl -vvv 10.100.12.2
 $ curl -vvv 10.100.30.2
 ```
 
-## Deploy a load balancer for the Nginx cluster
+### Deploy a load balancer for the Nginx cluster
 
 Deploy the load balancer for the deployment `my-nginx`
 ```
