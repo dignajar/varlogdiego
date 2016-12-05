@@ -58,8 +58,6 @@ KUBE_MASTER="--master=http://kuber-master:8080"
 
 Configure the Flannel service, edit the file `/etc/sysconfig/flanneld`
 ```
-
-```
 FLANNEL_ETCD="http://kuber-master:2379"
 FLANNEL_ETCD_KEY="/kuber-centos/network"
 FLANNEL_OPTIONS=""
@@ -68,7 +66,6 @@ FLANNEL_OPTIONS=""
 ### Master
 
 Configure etcd, edit the file `/etc/etcd/etcd.conf`
-
 ```
 # [member]
 ETCD_NAME=default
@@ -80,7 +77,6 @@ ETCD_ADVERTISE_CLIENT_URLS="http://0.0.0.0:2379"
 ```
 
 Configure the API server, edit the file `/etc/kubernetes/apiserver`
-
 ```
 KUBE_API_ADDRESS="--address=0.0.0.0"
 KUBE_API_PORT="--port=8080"
@@ -109,7 +105,6 @@ $ etcdctl mk /kuber-centos/network/config "{ \"Network\": \"10.100.0.0/16\", \"S
 ### Minions nodes
 
 Configure Kubelet service, edit the file `/etc/kubernetes/kubelet`
-
 ```
 KUBELET_ADDRESS="--address=0.0.0.0"
 KUBELET_PORT="--port=10250"
@@ -152,7 +147,6 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 10.100.0.0      0.0.0.0         255.255.0.0     U     0      0        0 flannel.1
 10.100.12.0     0.0.0.0         255.255.255.0   U     0      0        0 docker0
 192.168.0.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
-
 ```
 
 Check nodes on master and minions
