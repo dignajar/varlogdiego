@@ -55,7 +55,7 @@ TCP Port 25555      from        {JUMPBOX IP ADDRESS}
 # It's highly recommended create a virtual machine for use as Jumpbox, then install all tools on this vm.
 # Create a new instance on the subnet where will be BOSH (echo-subnet-public).
 # You can use the private key echo.pem for your Jumpbox.
-# t2.micro is enough.
+# t2.micro is enough but add extra disk on root partition.
 ```
 
 ## 2- Install bosh-init

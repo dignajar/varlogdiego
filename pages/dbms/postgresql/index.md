@@ -4,17 +4,22 @@ Content:
 
 ## Client
 
-Ubuntu installation
+### Ubuntu installation
 ```
 $ apt-get install postgresql-client
 ```
 
-Connect to database
+### Centos installation
+```
+$ yum install postgresql
+```
+
+### Connect to database
 ```
 $ psql -h {HOSTNAME} {DATABASE} {USERNAME}
 ```
 
-Exit connection
+### Exit connection
 ```
 \q
 ```

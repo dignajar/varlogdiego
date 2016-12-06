@@ -2,9 +2,11 @@ Title: Nginx + PHP-FPM + Tuning
 
 Content:
 
-## Tuning PHP
+## PHP-FPM Configure & Tuning
 
 ### User and Group
+
+Edit the file `/etc/php-fpm.d/www.conf`
 ```
 [www]
 ...
@@ -14,8 +16,8 @@ group = nginx
 ```
 
 ### Unix sockets
-Edit the file /etc/php-fpm.d/www.conf
 
+Edit the file `/etc/php-fpm.d/www.conf`
 ```
 [www]
 ....
@@ -28,7 +30,7 @@ listen.mode = 0660
 ### TCP Sockets
 Listen directive to TCP, IP:Port.
 
-Edit the file /etc/php-fpm.d/www.conf
+Edit the file `/etc/php-fpm.d/www.conf`
 ```
 listen = 127.0.0.1:9000
 ```
