@@ -12,3 +12,4 @@ $ ssh -D 8080 -f -C -q user@ssh-server
 - `-q` quiet mode
 
 Configure Firefox->Preferences->Network->Settings->Manula proxy configuration->SOCKS Host
+

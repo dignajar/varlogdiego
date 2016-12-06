@@ -39,3 +39,4 @@ Connect to database and execute.
 ```
 CREATE EXTENSION "citext";
 ```
+
