@@ -1,2 +1,0 @@
-Title: GNU/Linux
-Content:
