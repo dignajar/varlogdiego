@@ -1,5 +1,6 @@
 # Title: Kubernetes
-<!-- Position: 4 -->
+<!-- Date: 2017-01-01 22:00:00 -->
+<!-- dateModified: 2017-01-01 22:00:00 -->
 ---
 ## Installation on CentOS 7
 

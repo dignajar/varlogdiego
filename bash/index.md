@@ -25,6 +25,11 @@ for i in $(seq 1 $AMOUNT); do
 done
 ```
 
+One line command
+```
+ps aux | grep php | awk '{print $2}' | xargs -L1 echo
+```
+
 ## Check environment variable is defined
 ```
 #!/bin/bash
